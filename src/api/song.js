@@ -83,7 +83,7 @@ export const getSongDownload = async (id, br = "hires") => {
   try {
     const res = await axios({
       method: "GET",
-      url: "https://auth.sayqz.com/?path=song/url",
+      url: "/song/url/v1",
       params: {
         id,
         level: convertLevel(br)

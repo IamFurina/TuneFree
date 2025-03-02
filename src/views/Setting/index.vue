@@ -40,14 +40,6 @@
       <div class="set-type">
         <n-h3 prefix="bar"> 常规 </n-h3>
         <n-card class="set-item">
-            <div class="name">如果您喜欢我们的服务，可以对我们进行赞赏！<n-text class="tip">我们承诺，TuneFree永久免费。</n-text></div>
-
-            <div class="donate-link">
-                <a href="https://afdian.net/a/sayqz" target="_blank"><img width="200" src="https://pic1.afdiancdn.com/static/img/welcome/button-sponsorme.png" alt=""></a >
-            </div>
-          </n-card>
-
-        <n-card class="set-item">
           <div class="name">明暗模式</div>
           <n-select
             v-model:value="themeType"
@@ -545,11 +537,6 @@
         <n-h3 prefix="bar"> 其他 </n-h3>
           <n-card class="set-item">
             <div class="name">TuneFree当前版本：{{ packageJson.version }}</div>
-            <div class="donate-link">
-              <n-button type="info" @click="toUpdate">
-                检查更新
-              </n-button>
-            </div>
           </n-card>
         <n-card class="set-item">
           <div class="name">显示 官网跳转 按钮</div>
