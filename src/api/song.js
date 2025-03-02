@@ -49,10 +49,10 @@ export const getSongDetail = (ids) => {
  * @param {number} id - 要获取音乐的 ID。
  * @param {number|string} br - 音质等级，可以是数字码率或字符串等级名称
  */
-export const getSongUrl = (id, br = "hires") => {
+export const getSongUrl = (id, br = "exhigh") => {
   return axios({
     method: "GET",
-    url: "https://auth.sayqz.com/?path=song/url",
+    url: "/song/url/v1",
     params: {
       id,
       level: convertLevel(br)
